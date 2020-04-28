@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="freecodecamp survey form">
+    <link rel="stylesheet" href="index.css">
+    <title>Blockchain survey form</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Blockchain Adoption Survey</h1>
+        <p id="description">This is to see how familiar you are with the blockchain ecosystem</p>
+    
+        <form id="survey-form">
+
+            <div class="input-wrap">
+                <input type="text" id="name" class="input" required placeholder="e.g Xavier Charles"></input>
+                <label id="name-label"class="label-wrap" for="name">
+                    <span class="label">What do we call you?*</span>
+                </label>
+            </div>
+
+            <br>
+            
+            <div class="input-wrap">
+                <input type="text" id="email" class="input" required placeholder="e.g example@gmail.com"></input>
+                <label id="email-label" class="label-wrap" for="email">
+                    <span class="label">What's your mail?*</span>
+                </label>
+            </div>
+           
+            <br>
+
+            <div class="input-wrap">
+                <input type="number" id="number" min="5" max="120" class="input" placeholder="e.g 21"></input>
+                <label id="email-label" class="label-wrap" for="email">
+                    <span class="label">How long have you been on earth?</span>
+                </label>
+            </div>
+
+            <br>
+
+            <div class="input-wrap">
+                <select id="dropdown"class="input" placeholder="e.g Techie">
+                    <option name="expertise">Techie</option>
+                    <option name="expertise">Developer</option>
+                    <option name="expertise">Computer Science Grad</option>
+                    <option name="expertise">None of the above</option>
+                </select>
+                <label id="email-label" class="label-wrap" for="role">
+                    <span class="label">Software Expertise</span>
+                </label>
+            </div>
+               
+            <br>
+
+            <div>
+                <label>Do you own a Cryptocurrency?</label>
+                <input type="radio" name="own" value="yes">Yes</input>
+                <input type="radio" name="own" value="no">No</input>
+
+            </div>
+
+            <br>
+
+            <div>
+                <label>What major cryptocurrencies do you own?</label>
+                <p>
+                    <input type="checkbox" name="crypto" value="Bitcoin">Bitcoin</input>
+                    <input type="checkbox" name="crypto" value="Ethereum">Ether</input>
+                    <input type="checkbox" name="crypto" value="Litecoin">Litecoin</input>
+                    <input type="checkbox" name="crypto" value="XRP">Ripple</input>
+                </p>
+                
+            </div>
+
+            <br>
+    
+            <div>
+                <label>How do you think Blockchain will revolutionalise industries?</label>
+                <textarea style="width: 100%; box-sizing: border-box" rows="5" placeholder="I think..."></textarea>
+            </div>
+
+            <br>
+
+            <button class="button" id="submit" type="submit">
+                <span>Submit</span>
+            </button>
+        </form>
+    </div>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
