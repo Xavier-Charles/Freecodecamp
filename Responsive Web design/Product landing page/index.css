@@ -1,0 +1,9 @@
+@media screen and (max-width: 992px) {
+  body {
+    background-color: blue;
+  }
+}
+
+ul{
+    display: flex;
+}
